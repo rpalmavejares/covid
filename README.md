@@ -45,8 +45,8 @@ and so on ...<br>
 ** Wanna try to amplify 1200pb probes? same basics, just select 1200pb primer pairs <br>
 <br>
 nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_4_RIGHT<br>
-nCoV-2019_4_LEFT <b> [TAB] </b> nCoV-2019_8_RIGHT<br>
-nCoV-2019_8_LEFT <b> [TAB] </b> nCoV-2019_12_RIGHT<br>
+nCoV-2019_4_LEFT <b> [TAB] </b> nCoV-2019_7_RIGHT<br>
+nCoV-2019_7_LEFT <b> [TAB] </b> nCoV-2019_10_RIGHT<br>
 ...<br>
 
 What about 1600pb probes?? <br>
