@@ -18,8 +18,9 @@ all_info_scheme = []
 
 
 for any_p in primers_file:
-    
-    all_primers.append(any_p.replace("\n",""))
+    aux = any_p.split("\t")
+    all_primers.append(aux[0].replace("\n",""))
+    all_primers.append(aux[1].replace("\n",""))
 
 #print (all_primers)
 
