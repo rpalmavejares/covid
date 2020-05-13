@@ -24,7 +24,7 @@ Your "custom_primers_pairs_file" should be a TAB separated file with the list or
 
 <h3> Example of custom_primers_pairs_file </h3>
 
-** If your primer probe lenght is 400pb, your file should look like the original V3 files:
+<h4> If your primer probe lenght is 400pb, your file should look like the original V3 files: </h4>
 <br>
 <br>
 nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_1_RIGHT<br>
@@ -33,7 +33,7 @@ nCoV-2019_2_LEFT <b> [TAB] </b> nCoV-2019_2_RIGHT<br>
 ...<br>
 nCoV-2019_98_LEFT <b> [TAB] </b> nCoV-2019_98_RIGHT<br>
 <br>
-** However, if you want to amplify 800pb probes, you might select 800pb primer pairs, like. <br>
+<h4> However, if you want to amplify 800pb probes, you might select 800pb primer pairs, like. </h4> <br>
 <br>
 nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_3_RIGHT<br>
 nCoV-2019_3_LEFT <b> [TAB] </b> nCoV-2019_5_RIGHT<br>
@@ -42,25 +42,25 @@ nCoV-2019_5_LEFT <b> [TAB] </b> nCoV-2019_7_RIGHT<br>
 
 and so on ...<br>
 
-** Wanna try to amplify 1200pb probes? same basics, just select 1200pb primer pairs <br>
+<h4> Wanna try to amplify 1200pb probes? same basics, just select 1200pb primer pairs </h4> <br>
 <br>
 nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_4_RIGHT<br>
 nCoV-2019_4_LEFT <b> [TAB] </b> nCoV-2019_7_RIGHT<br>
 nCoV-2019_7_LEFT <b> [TAB] </b> nCoV-2019_10_RIGHT<br>
 ...<br>
 
-What about 1600pb probes?? <br>
+<h4> What about 1600pb probes?? </h4> <br>
 <br>
 nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_5_RIGHT<br>
 nCoV-2019_5_LEFT <b> [TAB] </b> nCoV-2019_9_RIGHT<br>
 nCoV-2019_9_LEFT <b> [TAB] </b> nCoV-2019_13_RIGHT<br>
 ...<br>
 
-** Wanna push the limits? maybe 30.000pb probes? <br>
+<h4> Wanna push the limits? maybe 30.000pb probes? </h4> <br>
 <br>
 nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_98_RIGHT<br>
 
-This probably won't work.... but in case it does, the script got you cover... you madlad.
+<h4> This probably won't work.... but in case it does, the script got you cover... you madlad. </h4>
 
 <br>
 
