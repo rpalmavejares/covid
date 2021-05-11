@@ -14,7 +14,7 @@ Your original artic files should be on a directory similar to :
 
 ### This script uses python 3.7 ###
 
-    python scheme_converter.py custom_primers_pairs_file </b>
+    python scheme_converter.py custom_primers_pairs_file
 
 Your "custom_primers_pairs_file" should be a TAB separated file with the list or primers selected in the sequencing step.
 
