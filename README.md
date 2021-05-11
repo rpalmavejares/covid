@@ -20,7 +20,7 @@ Your "custom_primers_pairs_file" should be a TAB separated file with the list or
 
 ### Example of custom_primers_pairs_file ###
 
-* If your primer probe lenght is 400pb, your file should look like the original V3 files:
+\* If your primer probe lenght is 400pb, your file should look like the original V3 files:
 
         nCoV-2019_1_LEFT    nCoV-2019_1_RIGHT
         nCoV-2019_2_LEFT    nCoV-2019_2_RIGHT
