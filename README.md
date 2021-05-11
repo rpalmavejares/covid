@@ -1,4 +1,4 @@
-<h2> Custom scheme converter </h2>
+# Custom scheme converter #
 
 This software allow you to convert the original V3 files of the artic protocol for the sequencing and assembly of covid-19 samples described in https://artic.network/ncov-2019 to a custom set of files suited for specific primer pairs selected in your nanopone sequencing pipeline.
 
