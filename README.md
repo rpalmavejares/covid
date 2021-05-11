@@ -6,9 +6,9 @@ This software allow you to convert the original V3 files of the artic protocol f
 <br>
 Your original artic files should be on a directory similar to :
 
-  artic-ncov2019/primer_schemes/nCoV-2019/V1
-  artic-ncov2019/primer_schemes/nCoV-2019/V2
-  artic-ncov2019/primer_schemes/nCoV-2019/V3
+    artic-ncov2019/primer_schemes/nCoV-2019/V1
+    artic-ncov2019/primer_schemes/nCoV-2019/V2
+    artic-ncov2019/primer_schemes/nCoV-2019/V3
 
 <h2> USAGE </h2>
 
