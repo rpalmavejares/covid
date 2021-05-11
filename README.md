@@ -20,7 +20,7 @@ Your "custom_primers_pairs_file" should be a TAB separated file with the list or
 
 ### Example of custom_primers_pairs_file ###
 
-\* If your primer probe lenght is 400pb, your **custom_primers_pairs_file** probes should be in order, exactly as it follows.
+\* If your primer probe lenght is 400pb-450pb, your **custom_primers_pairs_file** probes should be in order, exactly as it follows.
 
         nCoV-2019_1_LEFT    nCoV-2019_1_RIGHT
         nCoV-2019_2_LEFT    nCoV-2019_2_RIGHT
@@ -28,24 +28,24 @@ Your "custom_primers_pairs_file" should be a TAB separated file with the list or
         ...
         nCoV-2019_98_LEFT   nCoV-2019_98_RIGHT
 
-### However, if you want to amplify 800pb probes, you might select 800pb primer pairs. This mean that you need to skip the next reverse primer to generate another pair ###
+### However, if you want to amplify 700pb-750pb probes you need to skip the next reverse primer to generate another pair ###
 
-        nCoV-2019_1_LEFT    nCoV-2019_3_RIGHT
-        nCoV-2019_3_LEFT    nCoV-2019_5_RIGHT
-        nCoV-2019_5_LEFT    nCoV-2019_7_RIGHT
+        nCoV-2019_1_LEFT    nCoV-2019_2_RIGHT
+        nCoV-2019_2_LEFT    nCoV-2019_4_RIGHT
+        nCoV-2019_4_LEFT    nCoV-2019_6_RIGHT
         ...
         and so on ...
 
-*Notice how in this example, we skip nCoV-2019_2_RIGHT, on the first pair .
+*Notice how in this example, we skip nCoV-2019_1_RIGHT, on the first pair .
 
-### The logic for larger primer pairs is is still the same as the previous example. Wanna try to amplify 1200pb probes? same basics, just select 1200pb primer pairs ###
+### The logic for larger primer pairs is is still the same as the previous example. Wanna try to amplify 1050pb probes? same basics, just select 1050pb primer pairs ###
 
         nCoV-2019_1_LEFT    nCoV-2019_4_RIGHT
         nCoV-2019_4_LEFT    nCoV-2019_7_RIGHT
         nCoV-2019_7_LEFT    nCoV-2019_10_RIGHT
         ...
 
-### What about 1600pb probes?? ###
+### What about 1650pb probes?? ###
 
         nCoV-2019_1_LEFT    nCoV-2019_5_RIGHT
         nCoV-2019_5_LEFT    nCoV-2019_9_RIGHT
