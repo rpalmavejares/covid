@@ -10,57 +10,47 @@ Your original artic files should be on a directory similar to :
     artic-ncov2019/primer_schemes/nCoV-2019/V2
     artic-ncov2019/primer_schemes/nCoV-2019/V3
 
-<h2> USAGE </h2>
+## USAGE ## 
 
-This script uses python 3.7 
-<br>
-<b> python scheme_converter.py custom_primers_pairs_file </b>
+### This script uses python 3.7 ###
 
-<br>
+    python scheme_converter.py custom_primers_pairs_file </b>
 
 Your "custom_primers_pairs_file" should be a TAB separated file with the list or primers selected in the sequencing step.
 
-<h3> Example of custom_primers_pairs_file </h3>
+### Example of custom_primers_pairs_file ###
 
-<h4> If your primer probe lenght is 400pb, your file should look like the original V3 files: </h4>
+* If your primer probe lenght is 400pb, your file should look like the original V3 files:
 
-nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_1_RIGHT<br>
-nCoV-2019_2_LEFT <b> [TAB] </b> nCoV-2019_2_RIGHT<br>
-...<br>
-...<br>
-nCoV-2019_98_LEFT <b> [TAB] </b> nCoV-2019_98_RIGHT<br>
-<br>
-<h4> However, if you want to amplify 800pb probes, you might select 800pb primer pairs, like. </h4> <br>
+        nCoV-2019_1_LEFT    nCoV-2019_1_RIGHT
+        nCoV-2019_2_LEFT    nCoV-2019_2_RIGHT
+        ...
+        ...
+        nCoV-2019_98_LEFT   nCoV-2019_98_RIGHT
 
-nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_3_RIGHT<br>
-nCoV-2019_3_LEFT <b> [TAB] </b> nCoV-2019_5_RIGHT<br>
-nCoV-2019_5_LEFT <b> [TAB] </b> nCoV-2019_7_RIGHT<br>
-...<br>
+### However, if you want to amplify 800pb probes, you might select 800pb primer pairs. This mean that you need to skip the next reverse primer to generate another pair ###
 
-and so on ...<br>
+    nCoV-2019_1_LEFT    nCoV-2019_3_RIGHT
+    nCoV-2019_3_LEFT    nCoV-2019_5_RIGHT
+    nCoV-2019_5_LEFT    nCoV-2019_7_RIGHT
+    ...
+    and so on ...
 
-<h4> Wanna try to amplify 1200pb probes? same basics, just select 1200pb primer pairs </h4> 
-<br>
-nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_4_RIGHT<br>
-nCoV-2019_4_LEFT <b> [TAB] </b> nCoV-2019_7_RIGHT<br>
-nCoV-2019_7_LEFT <b> [TAB] </b> nCoV-2019_10_RIGHT<br>
-...<br>
+*Notice how in this example, we skip nCoV-2019_2_RIGHT, on the first pair .
 
-<h4> What about 1600pb probes?? </h4> <br>
-<br>
-nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_5_RIGHT<br>
-nCoV-2019_5_LEFT <b> [TAB] </b> nCoV-2019_9_RIGHT<br>
-nCoV-2019_9_LEFT <b> [TAB] </b> nCoV-2019_13_RIGHT<br>
-...<br>
+### The logic for larger primer pairs is is still the same as the previous example. Wanna try to amplify 1200pb probes? same basics, just select 1200pb primer pairs ###
 
-<h4> Wanna push the limits? maybe 30.000pb probes? </h4> 
+    nCoV-2019_1_LEFT    nCoV-2019_4_RIGHT
+    nCoV-2019_4_LEFT    nCoV-2019_7_RIGHT
+    nCoV-2019_7_LEFT    nCoV-2019_10_RIGHT
+    ...
 
-nCoV-2019_1_LEFT <b> [TAB] </b> nCoV-2019_98_RIGHT<br>
+### What about 1600pb probes?? ###
 
-<h4> This probably won't work.... but in case it does, the script got you cover... you madlad. </h4>
-
-<br>
-
-<b> After the execution of the script, remember to replace your 3 new files, to the older ones and you are ready to go, just make sure to save the old ones just in case </b>
+    nCoV-2019_1_LEFT    nCoV-2019_5_RIGHT
+    nCoV-2019_5_LEFT    nCoV-2019_9_RIGHT
+    nCoV-2019_9_LEFT    nCoV-2019_13_RIGHT
+    ...
+## After the execution of the script, remember to replace your 3 new files, to the older ones and you are ready to go, just make sure to save the old ones just in case ##
 
 
