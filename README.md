@@ -9,6 +9,7 @@ Your original artic files should be on a directory similar to :
         artic-ncov2019/primer_schemes/nCoV-2019/V1
         artic-ncov2019/primer_schemes/nCoV-2019/V2
         artic-ncov2019/primer_schemes/nCoV-2019/V3
+**The distribution of all primers along the genome can be found on the https://github.com/rpalmavejares/covid/blob/master/nCoV-2019.pdf file**
 
 ## USAGE ## 
 
