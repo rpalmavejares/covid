@@ -94,6 +94,7 @@ output_tsv.close()
       
 side = 0
 pairs = 1
+strands = ""
 for any_primers in all_primers:
     for any_bed in all_info_bed:
         
@@ -107,10 +108,18 @@ for any_primers in all_primers:
             rename=any_bed[3].split("_")
             new_name=rename[0]+"_"+str(pairs)+"_"+str(rename[2])
             side +=1
-
-            output_bed.write(str(any_bed[0])+"\t"+str(any_bed[1])+"\t"+str(any_bed[2])
-                  +"\t"+str(new_name)+"\t"+str(any_bed[4])
-                   +"\t"+str(any_bed[5])+"\n")
+            if ("LEFT" in new_name):
+                 strands = "+"
+            if ("RIGHT" in new_name):
+                 strands = "-"
+            if ( (pairs % 2) == 0 ):
+                 output_bed.write(str(any_bed[0])+"\t"+str(any_bed[1])+"\t"+str(any_bed[2])
+                  +"\t"+str(new_name)+"\t"+str("nCoV-2019_2")
+                   +"\t"+str(strands)+"\n")
+            if ( (pairs % 2) == 1 ):            
+                 output_bed.write(str(any_bed[0])+"\t"+str(any_bed[1])+"\t"+str(any_bed[2])
+                  +"\t"+str(new_name)+"\t"+str("nCoV-2019_1")
+                   +"\t"+str(strands)+"\n")
 output_bed.close()
           
             
@@ -131,11 +140,13 @@ for any_primers in all_primers:
             rename=any_scheme[3].split("_")
             new_name=rename[0]+"_"+str(pairs)+"_"+str(rename[2])
             side +=1
+            if ( (pairs % 2) == 0 ):
+                  output_scheme.write(str(any_scheme[0])+"\t"+str(any_scheme[1])+"\t"+str(any_scheme[2])
+                  +"\t"+str(new_name)+"\t"+str("nCoV-2019_2")+"\n")
+            if ( (pairs % 2) == 1 ):
+                  output_scheme.write(str(any_scheme[0])+"\t"+str(any_scheme[1])+"\t"+str(any_scheme[2])
+                  +"\t"+str(new_name)+"\t"+str("nCoV-2019_1")+"\n")
 
-            output_scheme.write(str(any_scheme[0])+"\t"+str(any_scheme[1])+"\t"+str(any_scheme[2])
-                  +"\t"+str(new_name)+"\t"+str(any_scheme[4])+"\n")
-            
 output_scheme.close()
-
 
 print ("end")
